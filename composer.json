@@ -44,7 +44,7 @@
     "require-dev": {
         "sami/sami": "~3.0",
         "silex/silex": "~2.0",
-        "phpunit/phpunit": "^4.8.36"
+        "phpunit/phpunit": "~6.0"
     },
     "autoload": {
         "psr-0": {
