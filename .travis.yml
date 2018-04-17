@@ -6,6 +6,7 @@ branches:
   only:
     - master
     - v1.x
+    - SILEX2
 
 cache:
   directories:
