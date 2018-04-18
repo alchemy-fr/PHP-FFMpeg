@@ -36,7 +36,7 @@ class FrameTest extends AbstractMediaTestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $filter = $this->getMock('FFMpeg\Filters\Frame\FrameFilterInterface');
+        $filter = $this->createMock('FFMpeg\Filters\Frame\FrameFilterInterface');
 
         $filters->expects($this->once())
             ->method('add')

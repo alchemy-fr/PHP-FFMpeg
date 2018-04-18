@@ -13,12 +13,12 @@ class TestCase extends BaseTestCase
 
     public function getLoggerMock()
     {
-        return $this->getMock('Psr\Log\LoggerInterface');
+        return $this->createMock('Psr\Log\LoggerInterface');
     }
 
     public function getCacheMock()
     {
-        return $this->getMock('Doctrine\Common\Cache\Cache');
+        return $this->createMock('Doctrine\Common\Cache\Cache');
     }
 
     public function getTimeCodeMock()
@@ -86,17 +86,17 @@ class TestCase extends BaseTestCase
 
     public function getFFProbeParserMock()
     {
-        return $this->getMock('FFMpeg\FFProbe\OutputParserInterface');
+        return $this->createMock('FFMpeg\FFProbe\OutputParserInterface');
     }
 
     public function getFFProbeOptionsTesterMock()
     {
-        return $this->getMock('FFMpeg\FFProbe\OptionsTesterInterface');
+        return $this->createMock('FFMpeg\FFProbe\OptionsTesterInterface');
     }
 
     public function getFFProbeMapperMock()
     {
-        return $this->getMock('FFMpeg\FFProbe\MapperInterface');
+        return $this->createMock('FFMpeg\FFProbe\MapperInterface');
     }
 
     public function getFFProbeOptionsTesterMockWithOptions(array $options)
@@ -114,7 +114,7 @@ class TestCase extends BaseTestCase
 
     public function getConfigurationMock()
     {
-        return $this->getMock('Alchemy\BinaryDriver\ConfigurationInterface');
+        return $this->createMock('Alchemy\BinaryDriver\ConfigurationInterface');
     }
 
     public function getFormatMock()

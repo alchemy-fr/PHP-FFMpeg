@@ -25,7 +25,7 @@ class WaveformTest extends AbstractMediaTestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $filter = $this->getMock('FFMpeg\Filters\Waveform\WaveformFilterInterface');
+        $filter = $this->createMock('FFMpeg\Filters\Waveform\WaveformFilterInterface');
 
         $filters->expects($this->once())
             ->method('add')

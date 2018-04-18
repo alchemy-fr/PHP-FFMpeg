@@ -22,7 +22,7 @@ class CropFilterTest extends TestCase
             ->method('getStreams')
             ->will($this->returnValue($streams));
 
-        $format = $this->getMock('FFMpeg\Format\VideoInterface');
+        $format = $this->createMock('FFMpeg\Format\VideoInterface');
 
         $dimension = new Dimension(200, 150);
         $point = new Point(25, 35);
